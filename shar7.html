@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <title>HTML للجيب</title>
+        <link rel="stylesheet" href="shar7.css" />
+        <meta charset="utf-8" />
+    </head>
+<body>
+<h1 id="المقدمة">المقدمة</h1>
+
+<p>مبدئيًا كُل مشروع بيتعمل بيبقى فيه تلت أنواع من الملفّات  <br>
+- html : ودي اللي بيبقى فيها المُحتوى أو الهيكلة بتاعت الصفحة <br>
+- css : وده الـ presentation أو الشكل بتاع الصفحة <br>
+- JavaScript: الـ behaviour وده اللوجيك اللي ورا الصفحة.</p><div class="se-section-delimiter"></div>
+
+<h1 id="html">HTML</h1>
+
+<p>يعني HyperText Markup Language, <a href="https://en.wikipedia.org/wiki/Hypertext">هايبر تكست</a> دي زي ما مشروحة في الملتيميديا هو اللي بيتعرض على جهاز إلكتروني عمومًا أو أجهزة الكمبيوتر خصوصًا واللي في  منّه لينكات بتودّي على أماكن تانية في النص ككُل فمثلًا كتاب <a href="http://eloquentjavascript.net/contents.html">Eloquent JavaScript</a> يُعتبر هايبر تكست لأنّك تقدر وإنت بتقرا في شابتر تتنقل لشابتر تاني بلينك , كمان الصفحة دي هايبر تكست لأنّها زي أي حاجة ع الويب لو بصّيت على أوّل حرفين من اللينك - إستنّى … أنا قولت لينك؟ ما ده كفاية! - هُمّا الـ ht إختصار HyperText.</p>
+
+<p>أمّا مثلًا كتاب C++ Tour (<a href="https://isocpp.org/images/uploads/2-Tour-Basics.pdf">1</a> <a href="https://isocpp.org/images/uploads/3-Tour-Abstr.pdf">2</a> <a href="https://isocpp.org/files/papers/4-Tour-Algo-draft.pdf">3</a> <a href="https://isocpp.org/files/papers/5-Tour-Util.pdf">4</a>) لأ مش هايبر تكست لأنّك مُضطر تتنقل بين الصفحات يدوي .. وكمان كتاب الفيل الأزرق , وتراب الماس وقواعد العشق الأربعون وكُل الكُتب العميقة دي مش هايبر تكست طالما النافيجيشن فيها مبيبقاش عن طريق لينكات..</p>
+
+<p>على فكرة النظري ده كُلّه عشان الإمتحان .. مش طبيعي بيتشرح .. <br>
+عمومًا , <a href="https://en.wikipedia.org/wiki/Markup_language">مارك أب</a> هي طريقة عشان تقسّم بيها النص لأجزاء مُفيدة .. مثلًا القرآن فيه آيات وأرباع وأحزاب وأجزاء وكدة .. في الإتش تي إم إل الصفحة بتتقسّم لأجزاء هنعرفها تباعًا.</p>
+
+<p>لانجويتش دي يعني لُغة … بجد على فكرة :D</p>
+
+<h1 id="عناصر-الإتش-تي-إم-إل">عناصر الإتش تي إم إل</h1>
+
+<p>عناصر دي ترجمة حرفية لـ elements  ودي أجزاء الصفحة اللي إتكلّمنا عنها من شوية , وبيحدد الإيلمينتس دي حاجة إسمها التاجز (tags) .. العناصر دي بقى نوعين , النوع الأوّلاني اللي بيبقى في له مُحتوى زي مثلًأ </p>
+
+<pre><code>&lt;p&gt;المحتوى&lt;/p&gt;</code></pre>
+
+<p>ده على بعضه إليمنت بيتكوّن من تاج البداية اللي هو هنا <code>&lt;p&gt;</code> عبارة عن علامة أصغر من بعدها إسم الإيليمنت وبعدين علامة أكبر من ..  <br>
+بعد كدة المُحتوى وبعد كدة تاج النهاية زي تاج البداية بالظبط بس فيه سلاش قبل إسم التاج.</p>
+
+<p>النوع التاني بقى الـ void element زي الأوّلاني بالظبط بس من غير مُحتوى ولا تاج نهاية بس بيبقى فيه سلاش قبل ما تقفله.</p>
+
+<pre><code>&lt;img src="http://farm5.staticflickr.com/4127/5052575720_fe49c6ccf7_z.jpg" /&gt;</code></pre>
+
+<p>في حاجة تانيية بتتكتب في تاج البداية وتاج الفويد إليمنتس هي الـ attributes  ومن الإسم هي خصائص الإليمنت ده فمثلًا مُمكن تكتب كلمة حمرة زي</p>
+
+<pre><code>&lt;p color="red"&gt;كلمة&lt;/p&gt;</code></pre>
+
+<p>أو مثلًا تكتب مكان الصورة , زي ..</p>
+
+<pre><code>&lt;img src="http://farm5.staticflickr.com/4127/5052575720_fe49c6ccf7_z.jpg" /&gt;</code></pre>
+
+<p>وكُل الإليمنتس اللي بتقبل مُحتوى , المُحتوى ده مُمكن يكون فيه إليمنتس تانية فمثلًا مُمكن تكتب</p>
+
+<pre><code>&lt;p&gt;
+الكلام &lt;b&gt;ده&lt;/b&gt; مهم جدًا
+&lt;/p&gt;</code></pre>
+
+<p>ومُمكن أكتر من إليمنت جوّا إليمنت واحد زي </p>
+
+<pre><code>&lt;p&gt;
+الكلام &lt;b&gt;ده&lt;/b&gt; مهم جدًا وده &lt;b&gt;&lt;strike&gt;كلام مهم وملوش لازمة&lt;/strike&gt;&lt;/b&gt;
+&lt;/p&gt;</code></pre>
+
+<p>أظُن واضح أوي أقصُد إيه :D عمومًا هيبقى أوضح في الأخر.</p><div class="se-section-delimiter"></div>
+
+<h2 id="عناصر-مهمة">عناصر مهمة</h2>
+
+<h3 id="body">body</h3>
+
+<p>ده اللي بيتحط فيها المُحتوى اللي بيظهر في الصفحة.</p>
+
+<h3 id="head">head</h3>
+
+<p>وده اللي بيتحط فيه معلومات عن الصفحة عمومًا.</p>
+
+<h3 id="meta">meta</h3>
+
+<p>ودي بيتحط فيها معلومات عن الصفحة , الفرق بينها وبين الهيد إن دي اللي بيتكتب فيها المعلومات فعليًا وبيتحط جوّة الهيد الهيد بيجمّع ده وحاجات كتير تانية مبتظهرش في الصفحة بس بتبقى فيها حاجات مُهمة للصفحة</p>
+
+<h3 id="link">link</h3>
+
+<p>بتربُط بيه الصفحة بحاجات تانية , مش زي الـ a اللي هيتشرح بعد كدة في إن ده مبيظهرش لأنّه بيربط الصفحة بحاجات لها علاقة مش بيعمل روابط تتك عليها , أشهر إستخدام ليه هيبقى في الـ css بعدين.</p>
+
+<h3 id="title">title</h3>
+
+<p>وده عشان أكتب عنوان الصفحة اللي بيظهر في شريط العنوان.</p>
+
+<h3 id="style">style</h3>
+
+<p>هنتكلّم عنها بالتفصيل في السي إس إس ودي بيتكتب فيها إستايلات الصفحة.</p><div class="se-section-delimiter"></div>
+
+<h3 id="script">script</h3>
+
+<p>هنتكلم عنه بالتفصيل بيتكتب فيه كود جافا سكريبت</p><div class="se-section-delimiter"></div>
+
+<h3 id="مثال">مثال</h3>
+
+<p>إنسخ الكود ده في فايل وسيّفه بإسم second.html وإفتحه , وحاول تفهم إيه اللي حصل.</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="auther" content="Elsayed Awdallah" /&gt;
+    &lt;title&gt;My Sample Page&lt;/title&gt;
+    &lt;link rel="shortcut icon" href="/favicon.ico"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;
+        This is my first &lt;strong&gt;HTML&lt;/strong&gt; Page.
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<h3 id="div">div</h3>
+
+<p>وده عشان يعمل block-level container مُجرّد كونتينر بحُط فيه إليمنتس تانية بس بيحجز مُربّع كامل في الصفحة.</p>
+
+<pre><code>I'm &lt;div style="background-color:red"&gt;not &lt;/div&gt;donkey.</code></pre><div class="se-section-delimiter"></div>
+
+<h3 id="span">span</h3>
+
+<p>inline container بستخدمه عشان أحُط فيه حاجات تانية بس ده إنلاين يعني مبيحجزش مٌربّع كامل مُمكن أحُطّه حوالين كلام صُغيّر ويفضل في نفس السطر.</p>
+
+<pre><code>I'm &lt;span style="display:none"&gt;not &lt;/span&gt;donkey.</code></pre>
+
+<h3 id="h1h6">h1..h6</h3>
+
+<p>من h1 لـ h6 هُمّا الهيدرز اللي أنا بستخدمهم هنا بإسفاف دول بيعملوا عناوين صُغيّرة وعناوين كبيرة وكدة. <br>
+ملحوظة h1 أكبر حاجة h6 أصغر حاجة.</p><div class="se-section-delimiter"></div>
+
+<h3 id="p">p</h3>
+
+<p>إختصار paragraph بتعمل فقرة كتابة</p>
+
+<pre><code>&lt;p&gt;
+يشرب أحمد اللبن. أحمد ولد قوي.
+&lt;/p&gt;</code></pre>
+
+<h3 id="u-b-i-strong-em">u, b, i, strong, em</h3>
+
+<p>زي ما موجودين في برامج زي الورد كدة. <br>
+<code>&lt;b&gt;</code> = <code>&lt;strong&gt;</code> : <strong>bold</strong> , <code>&lt;u&gt;</code>: <u>underlined</u> , <code>&lt;i&gt;</code> = <code>&lt;em&gt;</code> : <em>italic</em></p>
+
+<pre><code>&lt;p&gt;
+أواب يأكُل &lt;b&gt;كورن فليكس&lt;/b&gt;. إذًا هو &lt;u&gt;ضعيف&lt;/u&gt;.
+&lt;/p&gt;</code></pre>
+
+<h3 id="img">img</h3>
+
+<p>بتضيف بيها صورة وبتحُط مكان الصورة في أتريبيوت <code>src</code> </p>
+
+<pre><code>&lt;img src="http://farm5.staticflickr.com/4127/5052575720_fe49c6ccf7_z.jpg" /&gt;</code></pre>
+
+<h3 id="a">a</h3>
+
+<p>إختصار anchor وأشهر إستخدام ليها هو إنّها بتعمل لينكات بين صفحة وصفحة تانية وبتاخد اللينك بتاع الصفحة التانية في أتريبيوت <code>href</code> إختصار هايبر ريفرانس</p>
+
+<pre><code>&lt;a href="http://www.google.com"&gt; إضغط هُنا للولوج إلى جوجل &lt;/a&gt;</code></pre>
+
+<h3 id="ul-ol-li">ul, ol, li</h3>
+
+<p>ul: unordered list <br>
+ol: ordered list <br>
+li: list item <br>
+الأولى بتعمل قايمة بنُقط من غير ترقيم , التانية بتعمل ترقيم والتالتة بتبقى جوّة أي تاج من الإتنين وبيبقى ده الآيتم بتاع القايمة , مثلًا</p>
+
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;GET&lt;/li&gt;
+    &lt;li&gt;POST&lt;/li&gt;
+    &lt;li&gt;PUT&lt;/li&gt;
+    &lt;li&gt;DELETE&lt;/li&gt;
+&lt;/ul&gt;</code></pre><div class="se-section-delimiter"></div>
+
+<h3 id="table">table</h3>
+
+<p>ده بيعمل جداول وفي جوّاه عناصر خاصّة بيه بنستخدمها جوّاه بس زي :</p>
+
+<ul>
+<li>thead : وده بيبدأ راس الجدول أو أوّل صف في الجدول من فوق.</li>
+<li>tfoot : وده خلينا نقول تذييل الجدول اللي هو أخر صف في الجدول.</li>
+<li>tbody : وده جسم الجدول اللي بيبقى بين راس الجدول والتذييل.</li>
+<li>tr : وده عبارة عن صف في الجدول.</li>
+<li>td : ودي خلية في الجدول وبتبقى موجودة تحت .</li>
+</ul>
+
+<p>أظن منسيتش حاجة , بس عمومًا خلّينا نشوف مثال لجدول..</p>
+
+<pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td&gt;الإسم&lt;/td&gt;
+            &lt;td&gt;السن&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;السيد&lt;/td&gt;
+            &lt;td&gt;20&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;حد أقل أهمية&lt;/td&gt;
+            &lt;td&gt;19&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;المجموع&lt;/td&gt;
+            &lt;td&gt;39&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre><div class="se-section-delimiter"></div>
+
+<h3 id="form">form</h3>
+
+<p>أرجوك خُد نفس عميق ومتدعيش عليا , الجُزء ده اللي طويل خلقة.</p>
+
+<p>الفورم هي المكان اللي اليوزر بيقدر يتفاعل معاه من الصفحة , وإن كُنت تقدر تستخدم كُل العناصر اللي هيتكلّم عنها دلوقتي لوحدهم بس لمّا بتحُطّهم في فورم بتقدر تحدد <code>action</code> و <code>method</code> للفور ككل.</p>
+
+<ul>
+<li>action : دي المكان اللي هتروحله لمّا تعمل submit للفورم.</li>
+<li>method : دي الطريقة اللي هتستخدمها  وإتش تي تي بي ليها <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">طرق</a> كتير أشهر إتنين منهم هُمّا GET و POST <br>
+<ul><li>GET : دي بتبعت الداتا بتاعت الفورم في الـ url فمثلًا لو عندي في الفورم إنبوت إسمه age وقيمته 20 وإنبوت name قيمته Elsayed الكويري سترينج , وده الجُزء اللي بعد علامة الإستفهام من اليو آر إل هيبقى <code>?name=Elsayed&amp;age=20</code> ومُشكلتها إن الداتا بتبقى موجودة في شريط العنوان فللأمان هتبقى وحشة لحاجات زي الباسورد مثلًا , كمان طول الكويري سترينج بيتحدد بطول العنوان عشان كدة ميقدرش ياخُد داتا كتير , الإستخدام المُفضّل فيها لمّا تبقى عايز تعرض صفحة مُعيّنةمن موقع ديناميك زي مثلًا لمّا تعمل سيرش في جوجل هتلاقي اللينك فيه <code>?q=السيد+عوض+الله</code></li>
+<li>POST : ودي أظرف شوية عشان الداتا بتتبعت في الـ body بتاع الريكويست فالمساحة مبتبقاش مُشكلة , والداتا كمان بتبقى مخفية عن اليوزر العادي الطبيعي الأحمق الأخرق اللي مبيعرفش يستخدم الكمبيوتر , وكمان تقدر تبعت فيها ملفّات ودياولو. لكن مُشكلتها الوحيدة هي إنّها مش مُناسبة للإستخدام بتاع <code>get</code> فمتعرفش مثلًا تخلّي صفحة الأخبار بتيجي بـ post request ناهيك عن إن وقعها على ودنك وحش بس كمان عشان إسم الخبر مش متحدد في العنوان محدّش هيعرف يجيبه.</li></ul></li>
+</ul>
+
+<p>في كمان PUT و DELETE جايز يكونوا مُهمّين وجايز لأ بالنسبة للإمتحان.</p>
+
+<h4 id="input">input</h4>
+
+<p>دلوقتي أهم إليمنت بنستخدمه في الفورم هو الـ input , وده في حد ذاته مش مُهم أوي , المُهم بجد هو الأتريبيوت بتاعت type وفي كذا type أهمّهم عشان الوقت: <br>
+- submit : وده زُرار عادي بس بيعمل submit للفورم. <br>
+- reset : وده زُرار برضو عادي بس بيمسح كُل الداتا اللي في الفورم وبيرجّعها زي ما كانت لمّا الصفحة فتحت. <br>
+- button : كُنت بهزّر ده الزُرار العادي بجد ووظيفته الوحيدة إنّك مُمكن تعملّه وظيفة بالجافا سكريبت :D <br>
+- text : وده اللي بيتكتب فيه سطر واحد من الكلام , زي مثلًا خانة اليوزر نيم في فيس بوك كدة. <br>
+- password : دي زي اللي فوق بس بيتبدّل مكان اللي بتكتبه نُقط , كانت زمان نجوم!</p>
+
+<p>الأتريبيوت التانية المُهمّة هي الـ name وده الإسم اللي بيبقى في الكويري.</p><div class="se-section-delimiter"></div>
+
+<h4 id="textarea">textarea</h4>
+
+<p>وده إليمنت تاني مُهم اللي هو المُربّع الكبير اللي مُمكن تكتب فيه أكتر من سطر .</p><div class="se-section-delimiter"></div>
+
+<h4 id="select">select</h4>
+
+<p>وده الكومبو بوكس اللي لمّا بتتك عليه بيجيبلك إختيارات وفي إليمنت تاني لازم يبقى تحتبه اللي هو <code>option</code> وده اللي بيبقى فيه إختيارات</p>
+
+<h4 id="label">label</h4>
+
+<p>وأخيرًا ده بيتكتب بيه الكلام اللي جنب الحاجات التانية أو فوقيها أو كدة</p>
+
+<p>دلوقتي هكتب مثال عن الفورم وفي الحقيقة هختم بيه الكلام عن html عمومًا دلوقتي لأن معتقدش الإمتحان هيجي فيه أكتر من كدة.</p>
+
+<h2 id="المثال-التاني">المثال التاني</h2>
+<p>خُد الكود ده وحُطّه في index.html وحُطه في نفس مكان الفايل الأولاني وإفتحه وجرب.</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;sign up&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;تسجيل&lt;/h1&gt;
+    &lt;form action="second.html" method="GET" &gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for="name"&gt;الإسم&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input type="text" name="name" /&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for="pw"&gt;كلمة السر&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;label type="password" name="pw" /&gt;&lt;td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;label for="signature"&gt;التوقيع&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;textarea name="signature"&gt;&lt;/textarea&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;input type="submit" /&gt;&lt;td&gt;
+                &lt;td&gt;&lt;input type="reset" /&gt;&lt;td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/form&gt;
+    &lt;!--ده كومنت مش هيظهر في الصفحة , عشان كدة مشرحتوش , وكمان حبيت أتأكّد إنّكم بتقروا الأكواد دي لأني فعلًا بتعب فيها :/ --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><div class="se-section-delimiter"></div>
+
+<h1 id="css">CSS</h1>
+
+<pre><code>TODO: write about CSS</code></pre>
+
+<h1 id="javascript">JavaScript</h1>
+
+<pre><code>TODO: Write about JavaScript</code></pre>
+</body>
+</html>
