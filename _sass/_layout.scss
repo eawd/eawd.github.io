@@ -492,6 +492,16 @@ there.
  }
 }
 
+/* bi-direction fixes */
+
 .rtl {
   direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+code {
+  direction: ltr;
 }
