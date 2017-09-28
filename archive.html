@@ -14,13 +14,12 @@ title: Archive
       <h2>{{ category | first }}</h2>
     </div>
     {% for post in category.last %}
-
-    {% if post.language == 'arabic' %}
-    <div class="rtl post_title">
-    {% else %}
     <div class="post_title">
-    {% endif %}
+      {% if post.language == 'arabic' %}
+      <bdi class="rtl"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></bdi>
+      {% else %}
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+      {% endif %}
       <span class="date">{{ post.date | date: "%-d %b, %Y" }}</span>
     </div>
 
