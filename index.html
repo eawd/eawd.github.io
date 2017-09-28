@@ -7,8 +7,11 @@ title: Home
   <div class="post-list">
 
     {% for post in site.posts limit:5%}
-
+    {% if post.language == 'arabic' %}
+    <article class="post_card ar post">
+    {% else %}
     <article class="post_card post">
+    {% endif %}
       <header class="post_header">
         <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h2>
         <time class="post_date">{{ post.date | date: "%d %B %Y, %A" }}</time>

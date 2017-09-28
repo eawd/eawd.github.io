@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+{% if page.language == 'arabic' %}
+<article class="ar post" itemscope itemtype="http://schema.org/BlogPosting">
+{% else %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting"></article>
+{% endif %}
 
   <header class="artilce_header">
     <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
