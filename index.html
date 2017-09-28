@@ -16,14 +16,18 @@ title: Home
         <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h2>
         <time class="post_date">{{ post.date | date: "%d %B %Y, %A" }}</time>
       </header>
-      <div class="post_excerpt">
+      <div class="post_excerpt article-content">
         <p>
           {% if post.description %}
           {{ post.description}}
           {% else %}
           {{ post.excerpt }}
-          {% endif %} 
-          <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> »  </a>
+          {% endif %}
+          {% if post.language == 'arabic' %}
+          <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> تكملة »  </a>
+          {% else %}
+          <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> Continue »  </a>
+          {% endif %}
         </p> 
       </div>
       <footer class="post_meta">

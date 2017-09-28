@@ -220,12 +220,13 @@ p.readmore {
 }
 
 .article-content a {
-  border-bottom:1px dotted red;
+  font-weight: bold;
+  border-bottom:1px dotted #FFC3C3;
   text-decoration:none;
 }
 .article-content a:hover {
-  color:red;
-  border-bottom:1px dotted red;
+  color:#C3C3C3;
+  border-bottom:1px dotted #FFC3C3;
 }
 
 .article-footer {
