@@ -192,6 +192,10 @@ input#menu-toggle {
   margin-bottom:0.5rem;
 }
 
+.archive_list .post_title {
+  text-align: left;
+}
+
 .post_date {
   color:#888;
   font-size:1.4rem;
@@ -488,6 +492,6 @@ there.
  }
 }
 
-.ar {
+.rtl {
   direction: rtl;
 }
