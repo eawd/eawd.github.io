@@ -32,9 +32,11 @@ Now reload postfix and your server then you should be able to send emails using 
 
 -----------
 This serverfault answer helped a lot:
+
 [https://serverfault.com/a/289290](https://serverfault.com/a/289290)
 
 And as a bonus, here is how to configure Postfix to use sendgrid as a relay host.
+
 [https://sendgrid.com/docs/Integrate/Mail_Servers/postfix.html](https://sendgrid.com/docs/Integrate/Mail_Servers/postfix.html)
 
 ----------
