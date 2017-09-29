@@ -6,7 +6,7 @@ permalink: /about/
 
 ## About me
 
-I am Elsayed Awdallah a web debeloper from Egypt, I used to go by the nickname Comando on a lot of internet forums, currently building products at [MalsApp](//malsapp.com) and part-time maintaining [Postgraduates' site at ENG-ASU](http://portal.eng.asu.edu.eg/postgraduate/), before that I have participate in [Google Summer of Code](//monosoc.blogspot.com.eg/2015/04/excited-for-this-years-summer-of-code.html) and [Microsoft Imagine Cup](//www.youtube.com/watch?v=enU3ST6iVwo).
+I am Elsayed Awdallah a web debeloper from Egypt, in case you stumble upon it, I used to go by the nickname *Comando* on a lot of internet forums, currently I'm building products at [MalsApp](//malsapp.com) and part-time maintaining [Postgraduates' site at ENG-ASU](http://portal.eng.asu.edu.eg/postgraduate/), before that, I participated in [Google Summer of Code](//monosoc.blogspot.com.eg/2015/04/excited-for-this-years-summer-of-code.html) and [Microsoft Imagine Cup](//www.youtube.com/watch?v=enU3ST6iVwo).
 
 I have some published apps on Windows Store, and have worked with multiple clients as a Freelance web and mobile developer.
 
