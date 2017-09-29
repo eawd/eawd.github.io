@@ -1,0 +1,40 @@
+---
+layout: default
+title: Archive
+---
+
+<div>
+
+  <h2>Archive</h2>
+
+  <small>Sort by [ <a href="{{ "/archive" | prepend: site.baseurl }}">Year</a> | <a href="{{ "/categories" | prepend: site.baseurl }}">Category</a> | <b>Language</b> ] </small>
+
+  <section class="archive_list">
+    <div class="category-name"><h2>English</h2></div>
+
+    {% for post in site.posts %}
+      {% if post.language == 'english' %}
+        <div class="post_title">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+          <span class="date">{{ post.date | date: "%-d %b, %Y" }}</span>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <section class="archive_list rtl">
+    <div class="category-name"><h2>عربي</h2></div>
+  
+    {% for post in site.posts %}
+      {% if post.language == 'arabic' %}
+        <div class="post_title" style="text-align:right;">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+          <bdi class="ltr"><span class="date">{{ post.date | date: "%-d %b, %Y" }}</span></bdi>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+</div>
+
+
