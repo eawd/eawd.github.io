@@ -23,35 +23,35 @@ url: "http://awdallah.tumblr.com/post/69610334093/parsing-an-xml-file-in-c"
 - الأوّل بنعمل لود للدوكيومنت بتاعت الإكس إم إل ..
 
 ```csharp
-Document.Load(@“X:\Path\to\file.xml”)
+Document.Load(@"X:\Path\to\file.xml")
 ```
 
 - وبنحطّها في فاريابُل من نوع XDocument ..
 مثلًأ:
 
 ```csharp
-XDocument doc = XDocument.Load(@“C:\quran.xml”);
+XDocument doc = XDocument.Load(@"C:\quran.xml");
 ```
 
 - بعد كدة بنعرّف فاريابل من نوع IEnumerable<XElement> بنحُط فيه كُل النودز اللي هنستخدمها , فمثلًا أنا محتاج السور والنود اللي بيكون فيها السور إسمها sura هكتب:
 
 ```csharp
-IEnumerable<XElement> sowar = doc.Elements().Elements(“sura”);
+IEnumerable<XElement> sowar = doc.Elements().Elements("sura");
 ```
 
-- مُمكن تكمّل بعد النود دي وتكويري نود تاني بإنّك تكول الميثود `.Elements("nodeName”)` تاني
-أو تجيب أتريبيوت مُعينة عن طريق الميثود `”.Attribute(“attributeText”);`
+- مُمكن تكمّل بعد النود دي وتكويري نود تاني بإنّك تكول الميثود `.Elements("nodeName")` تاني
+أو تجيب أتريبيوت مُعينة عن طريق الميثود `".Attribute("attributeText");`
 وطبعًا تقدر تـ iterate على كُل النودز زي أي حاجة تانية ..
 
 الكود في النهاية المفروض يبقى حاجة زي كدة :
 
 ```csharp
-XDocument doc = XDocument.Load(@“C:\quran.xml”);
-IEnumerable<XElement> sowar = doc.Elements().Elements(“sura”);
-String s = “السور الموجودة في القُرآن هي :\n”;
+XDocument doc = XDocument.Load(@"C:\quran.xml");
+IEnumerable<XElement> sowar = doc.Elements().Elements("sura");
+String s = "السور الموجودة في القُرآن هي :\n";
 foreach (var sura in sowar)
 {
-    s += (String)sura.Attribute(“name”) + “\n”;
+    s += (String)sura.Attribute("name") + "\n";
 }
 ```
 
