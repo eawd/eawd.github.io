@@ -46,13 +46,13 @@ IEnumerable<XElement> sowar = doc.Elements().Elements(“sura”);
 الكود في النهاية المفروض يبقى حاجة زي كدة :
 
 ```csharp
-    XDocument doc = XDocument.Load(@“C:\quran.xml”);
-    IEnumerable<XElement> sowar = doc.Elements().Elements(“sura”);
-    String s = “السور الموجودة في القُرآن هي :\n”;
-    foreach (var sura in sowar)
-    {
-        s += (String)sura.Attribute(“name”) + “\n”;
-    }
+XDocument doc = XDocument.Load(@“C:\quran.xml”);
+IEnumerable<XElement> sowar = doc.Elements().Elements(“sura”);
+String s = “السور الموجودة في القُرآن هي :\n”;
+foreach (var sura in sowar)
+{
+    s += (String)sura.Attribute(“name”) + “\n”;
+}
 ```
 
 وكأي مُهاجر غير شرعي لتمبلر معتقدش إنّي هتابع أو هكمّل كتير .. فلو مردّتش على حد محدّش يزعل ..
