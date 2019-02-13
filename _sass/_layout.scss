@@ -34,7 +34,7 @@ body {
       text-decoration:none;
     }
     a:hover {
-      color:red;
+      color:#006;
       border-bottom:1px dotted;
     }
   }
@@ -224,13 +224,12 @@ p.readmore {
 }
 
 .article-content a {
-  font-weight: bold;
-  border-bottom:1px dotted #FFC3C3;
+  border-bottom:1px solid #C3C3FF;
   text-decoration:none;
 }
 .article-content a:hover {
-  color:#C3C3C3;
-  border-bottom:1px dotted #FFC3C3;
+  color:#C3C3FF;
+  border-bottom:1px solid #C3C3FF;
 }
 
 .article-footer {
