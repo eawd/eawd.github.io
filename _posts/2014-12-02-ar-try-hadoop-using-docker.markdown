@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "إزّاي تجرّب hadoop باستخدام docker"
+title:  "طريقة تشغيل هادوب بدوكر"
 language: arabic
 date: 2014-12-2 21:06:26 +0800
 categories: arabic hadoop docker

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[ar] Parsing an XML file using C#"
+title:  "إزاي تقرا ملف إكس إم إل باستخدام سي شارب"
 language: arabic
 date: 2013-12-10 21:06:26 +0800
 categories: arabic csharp xml

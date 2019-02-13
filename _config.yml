@@ -20,6 +20,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+highlighter: rouge
+
 # Third-party services
 # just leave someone empty to disable it
 google_analytics: UA-47536504-1
