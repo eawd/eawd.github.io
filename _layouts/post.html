@@ -18,10 +18,14 @@ layout: default
   {% comment %}
   <footer class="ltr article-footer">
 
+  {% for category in post.categories %}
+  <a href="{{"/category/" | append: category | prepend: site.baseurl }}">
+    <data data-icon="ei-archive"></data>
+    {{category}}</a>
+  {% endfor %}
+
   {% include share.html %}
 
-  <hr/>
-  
   {% include author.html %}
 
   </footer>

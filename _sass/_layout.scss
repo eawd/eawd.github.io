@@ -173,6 +173,10 @@ input#menu-toggle {
 
 .post {
   @extend .dont-break-out;
+
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px #eee solid;
 }
 
 .post-list {
