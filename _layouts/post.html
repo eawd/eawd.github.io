@@ -9,7 +9,7 @@ layout: default
 
   <header class="artilce_header">
     <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="artilce_meta"><bdi class="ltr"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post_date">{{ page.date | date: "%d %B %Y, %A" }}</time></bdi>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="artilce_meta"><bdi class="ltr"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="post_date">{{ page.date | date: "%d.%m.%Y" }}</time></bdi>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
   <div class="article-content" itemprop="articleBody">
