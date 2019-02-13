@@ -7,7 +7,7 @@ categories: arabic hadoop docker
 url: "http://awdallah.tumblr.com/post/104174543050/%D8%A5%D8%B2-%D8%A7%D9%8A-%D8%AA%D8%AC%D8%B1-%D8%A8-hadoop-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-docker"
 ---
 
-*ممكن تشوف البوست على [تمبلر](http://awdallah.tumblr.com/post/104174543050/%D8%A5%D8%B2-%D8%A7%D9%8A-%D8%AA%D8%AC%D8%B1-%D8%A8-hadoop-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-docker) أو [هنا]({{ site.baseurl }}{% post_url 2014-12-02-ar-try-hadoop-using-docker %})*
+> *البوست على [تمبلر](http://awdallah.tumblr.com/post/104174543050/%D8%A5%D8%B2-%D8%A7%D9%8A-%D8%AA%D8%AC%D8%B1-%D8%A8-hadoop-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-docker)*
 
 صباح الخير ومساء الخير , في الكُلية الترم ده بندرس كورس Big data وعشان نشتغل بيج داتا لازم نستخدم hadoop.
 

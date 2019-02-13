@@ -7,7 +7,7 @@ categories: arabic csharp xml
 url: "http://awdallah.tumblr.com/post/69610334093/parsing-an-xml-file-in-c"
 ---
 
-*ممكن تشوف البوست على [تمبلر](http://awdallah.tumblr.com/post/69610334093/parsing-an-xml-file-in-c) أو [هنا]({{ site.baseurl }}{% post_url 2013-12-10-parse-xml-csharp %})*
+> *البوست على [تمبلر](http://awdallah.tumblr.com/post/69610334093/parsing-an-xml-file-in-c)*
 
 
 أول مرّة أكتب على تيمبلر , هكتب عن البرمجة .. عجب :D
