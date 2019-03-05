@@ -159,7 +159,11 @@ I'm <span style="display:none">not </span>donkey.
 زي ما موجودين في برامج زي الورد كدة.
 
 
-`<b>` = `<strong>` : **bold** , `<u>`: <u>underlined</u> , `<i>` = `<em>` : _italic_
+`<b>` = `<strong>` : **bold**
+
+`<u>`: <u>underlined</u>
+
+`<i>` = `<em>` : _italic_
 
 ```html
 <p>
