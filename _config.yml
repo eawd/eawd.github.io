@@ -11,7 +11,7 @@ email: e.awdallah@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is the personal site and blog of Elsayed Awdallah an Egyptian web and mobile developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://eawd.github.io" # the base hostname & protocol for your site
+url: "https://eawd.github.io" # the base hostname & protocol for your site
 twitter_username: EAwdallah
 github_username:  eawd
 
