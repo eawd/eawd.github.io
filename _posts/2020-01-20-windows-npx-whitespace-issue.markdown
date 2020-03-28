@@ -42,7 +42,7 @@ npm config list -l
 
 The output should look like the following:
 
-![Command Output]({{site.baseurl}}/assets/img/posts/npx/1.png)
+![Command Output]({{site.baseurl}}/assets/img/posts/npx/1.jog)
 
 Find the following keys: `cache`, `prefix` and `userconfig`, `userconfig` should be your `.npmrc` file edit or create it using your favorite editor and add the `cache` and `prefix` to it, replacing your username directory with the short version for me that would be `USERNA~1`.
 
