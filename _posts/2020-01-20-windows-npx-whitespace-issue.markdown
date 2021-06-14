@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "npx issue with directories with whitespace (Windows)"
+title:  "Fixing npm whitespace issue with paths on Windows"
 language: english
 date: 2020-01-20 19:27:14 +02:00
 categories: windows nodejs
